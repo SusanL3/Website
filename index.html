@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Caveat', cursive;
+            background: url('background-image.jpg') no-repeat center center fixed, url('paw-print-background.png') repeat, #add8e6;
+            background-blend-mode: overlay;
+            background-size: cover;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #ff6f61;
+        }
+        p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 10px auto;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-family: 'EB Garamond', serif;
+        }
+        video {
+            max-width: 80%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            color: white;
+            background-color: #ff6f61;
+            border-radius: 20px;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-family: 'Caveat', cursive;
+        }
+        button:hover {
+            background-color: #ff4c3b;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Adorable Aussie Pups</h1>
+    <video autoplay loop muted>
+        <source src="Aussies.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <p>Click below to learn more about our Australian Shepherd Dogs!</p>
+    <button onclick="window.location.href='content.html'">Learn More</button>
+</body>
+</html>
